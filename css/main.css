@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c65de;
+  margin: 0 10rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+.header .right {
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+}
+.header .tel {
+  margin-right: 50px;
+  border-right: 1px solid #fff;
+  height: 100%;
+  padding-right: 25px;
+}
+.header .left {
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+}
+.header .log {
+  margin-right: 50px;
+  border-right: 1px solid #fff;
+  height: 100%;
+  padding-right: 25px;
+}
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 25px;
+}
+nav div ul {
+  position: absolute;
+}
+nav div ul li {
+  display: none;
+}
+nav div:hover ul li {
+  display: block;
+}
+nav p,
+nav li,
+nav div {
+  display: inline-block;
+}
+nav p {
+  font-size: 30px;
+  color: #fff;
+}
+nav ul {
+  margin-left: auto;
+  color: #fff;
+}
+nav ul .chat {
+  border: 1px solid #fff;
+  padding: 15px 35px;
+  border-radius: 50px;
+  margin-left: 25px;
+  transition: all 1.5s;
+}
+nav ul .chat a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 1.5s;
+}
+nav ul .chat:hover {
+  background-color: #fff;
+  color: #1c65de;
+}
+nav ul .chat:hover a {
+  color: #1c65de;
+}
+nav ul li {
+  margin-right: 25px;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+nav ul li:hover {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+.sect {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 100px;
+  height: 100%;
+}
+.sect .photo {
+  width: 50%;
+}
+.sect .photo img {
+  max-width: 100%;
+}
+.sect .text {
+  width: 50%;
+}
+.sect .text h2 {
+  font-size: 80px;
+  color: #fff;
+}
+.sect .text h3 {
+  color: #fff;
+  font-size: 35px;
+  margin-top: 15px;
+}
+.sect .text p {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 15px;
+}
+.sect .text a {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 25px;
+  transition: all 1.5s;
+}
+.sect .text a:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #1c65de;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  body {
+    margin: 0 1rem;
+  }
+
+  .header .right {
+    display: none;
+  }
+  .header .left {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .header .tel {
+    margin: 0;
+    border-right: 0;
+    padding-bottom: 5px;
+  }
+
+  nav ul .bi-arrow-down {
+    display: none;
+  }
+  nav ul li {
+    display: none;
+  }
+
+  .sect {
+    margin-top: 10px;
+  }
+  .sect .text h3 {
+    font-size: 20px;
+  }
+  .sect .text h2 {
+    font-size: 25px;
+  }
+  .sect .text p {
+    font-size: 15px;
+  }
+  .sect .text a {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  body {
+    margin: 0 5rem;
+  }
+
+  .header .left {
+    margin: 0;
+    padding: 0;
+  }
+  .header .tel {
+    margin: 0;
+    border-right: 0;
+  }
+  .header .log {
+    border: none;
+    margin: 0;
+  }
+
+  nav ul .bi-arrow-down {
+    display: none;
+  }
+  nav ul li {
+    display: none;
+  }
+
+  .sect {
+    margin-top: 25px;
+  }
+  .sect .text h3 {
+    font-size: 30px;
+  }
+  .sect .text h2 {
+    font-size: 50px;
+  }
+  .sect .text p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
